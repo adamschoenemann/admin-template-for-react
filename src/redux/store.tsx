@@ -1,5 +1,5 @@
 import createSagaMiddleware from 'redux-saga';
-import { createStore, applyMiddleware, compose, Store } from 'redux';
+import { createStore, applyMiddleware, compose, Store, AnyAction } from 'redux';
 import { routerMiddleware } from 'connected-react-router';
 
 import history from './history';
@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'development') {
     middlewares.push(logger);
 }
 
-const store: Store<any, any> = createStore(
+const store: Store<any, AnyAction> = createStore(
     rootReducer,
     composeEnhancer(applyMiddleware(...middlewares)),
 );
