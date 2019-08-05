@@ -2,7 +2,7 @@ import { Config } from '.';
 
 const config: Config = {
     resourceBaseUri: '/',
-    defaultLocale: 'zh-CN', // empty to use navigator language
+    defaultLocale: 'en-US', // empty to use navigator language
     locales: [
         {
             name: 'English',
