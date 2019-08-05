@@ -22,7 +22,7 @@ export class Url {
         }
     }
 
-    public appendQueries(queries: object | string): string {
+    public appendQueries(queries: { [key: string]: unknown } | string): string {
         if (typeof queries === 'string') {
             return `${this.originUrl}${
                 this.originUrl.indexOf('?') < 0 ? '?' : ''
@@ -36,11 +36,14 @@ export class Url {
         }
     }
 
-    public merge(absolutePath: string, queries?: object | string): string {
+    public merge(
+        absolutePath: string,
+        queries?: { [key: string]: unknown } | string,
+    ): string {
         return new Url(`${this.rootUrl}${absolutePath}`).appendQueries(queries);
     }
 
-    public redirect(queriesOrUrl: object | string) {
+    public redirect(queriesOrUrl: { [key: string]: unknown } | string) {
         if (typeof queriesOrUrl === 'string') {
             location.href = queriesOrUrl;
         } else {
