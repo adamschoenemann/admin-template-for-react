@@ -1,15 +1,17 @@
+import { Admin } from "app/pages/admin";
+import { Callback, Login, Logout } from "app/pages/auth";
+import { NotFound } from "app/pages/public";
+import { getAuthUri, isAuthorized } from "app/service/auth";
 import * as React from "react";
 import { Redirect } from "react-router";
-import { isAuthorized, getAuthUri } from "app/service/auth";
-import { Home, NotFound } from "app/pages/public";
-import { Admin } from "app/pages/admin";
-import { Login, Logout, Callback } from "app/pages/auth";
 
 const routes = [
   {
     path: "/",
     exact: true,
-    component: Home,
+    render: () => {
+      return <Redirect to="/admin" />;
+    },
   },
   {
     path: "/login",
