@@ -15,11 +15,11 @@ const styles = (theme: Theme) =>
   createStyles({
     textarea: {
       width: "100%",
-      marginRight: theme.spacing.unit,
+      marginRight: theme.spacing(1),
       "& div": {
         height: "calc(100vh - 150px)",
-        paddingTop: theme.spacing.unit * 2,
-        paddingBottom: theme.spacing.unit,
+        paddingTop: theme.spacing(1) * 2,
+        paddingBottom: theme.spacing(1),
       },
     },
     textareaRoot: {},
@@ -27,8 +27,8 @@ const styles = (theme: Theme) =>
       width: "100%",
       height: "calc(100vh - 150px)",
       border: `1px solid ${theme.palette.divider}`,
-      marginLeft: theme.spacing.unit,
-      padding: theme.spacing.unit * 3,
+      marginLeft: theme.spacing(1),
+      padding: theme.spacing(1) * 3,
       borderRadius: 4,
     },
   });

@@ -20,9 +20,9 @@ const styles = (theme: Theme) =>
   createStyles({
     contentHeader: {
       display: "flex",
-      paddingTop: theme.spacing.unit * 2,
-      paddingBottom: theme.spacing.unit * 2,
-      marginBottom: theme.spacing.unit,
+      paddingTop: theme.spacing(1) * 2,
+      paddingBottom: theme.spacing(1) * 2,
+      marginBottom: theme.spacing(1),
       "& h2": {
         flex: 1,
       },

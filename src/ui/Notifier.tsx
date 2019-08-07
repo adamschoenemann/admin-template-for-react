@@ -12,8 +12,8 @@ const notifierContentStyles = (theme: Theme) =>
     ...variantColor(theme),
     common: {
       opacity: 0.9,
-      paddingLeft: theme.spacing.unit * 2,
-      paddingRight: theme.spacing.unit * 5,
+      paddingLeft: theme.spacing(1) * 2,
+      paddingRight: theme.spacing(1) * 5,
     },
     info: {
       backgroundColor: ifTheme(
@@ -27,7 +27,7 @@ const notifierContentStyles = (theme: Theme) =>
     },
     iconVariant: {
       opacity: 0.9,
-      marginRight: theme.spacing.unit,
+      marginRight: theme.spacing(1),
     },
     message: {
       display: "flex",

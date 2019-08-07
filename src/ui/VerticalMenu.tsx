@@ -76,13 +76,13 @@ const styles = (theme: Theme) =>
     },
     childList: {
       "& $listItem": {
-        paddingLeft: theme.spacing.unit,
+        paddingLeft: theme.spacing(1),
       },
       "& $childList $listItem": {
-        paddingLeft: theme.spacing.unit * 2,
+        paddingLeft: theme.spacing(1) * 2,
       },
       "& $childList $childList $listItem": {
-        paddingLeft: theme.spacing.unit * 3,
+        paddingLeft: theme.spacing(1) * 3,
       },
     },
     expandIcon: {

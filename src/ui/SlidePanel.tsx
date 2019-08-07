@@ -19,7 +19,7 @@ const styles = (theme: Theme) =>
     header: {
       display: "flex",
       alignItems: "flex-end",
-      padding: `${theme.spacing.unit}px ${theme.spacing.unit * 2}px`,
+      padding: `${theme.spacing(1)}px ${theme.spacing(1) * 2}px`,
       borderBottom: `solid 1px ${theme.palette.divider}`,
     },
     headerTitle: {
@@ -30,7 +30,7 @@ const styles = (theme: Theme) =>
       textAlign: "right",
     },
     body: {
-      padding: `${theme.spacing.unit}px ${theme.spacing.unit * 2}px`,
+      padding: `${theme.spacing(1)}px ${theme.spacing(1) * 2}px`,
     },
   });
 

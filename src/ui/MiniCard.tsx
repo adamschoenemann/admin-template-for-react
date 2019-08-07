@@ -22,13 +22,14 @@ const miniCardStyles = (theme: Theme) =>
       },
     },
     body: {
-      padding: `${theme.spacing.unit}px ${theme.spacing.unit * 1.5}px ${theme
-        .spacing.unit * 2}px ${theme.spacing.unit * 1.5}px`,
+      padding: `${theme.spacing(1)}px ${theme.spacing(1.5)}px ${theme.spacing(
+        2,
+      )}px ${theme.spacing(1.5)}px`,
     },
     icon: {
       position: "absolute",
-      top: theme.spacing.unit,
-      right: theme.spacing.unit,
+      top: theme.spacing(1),
+      right: theme.spacing(1),
       opacity: 0.3,
       transform: "scale(3.5)",
       transformOrigin: "top right",
@@ -44,8 +45,8 @@ const miniCardStyles = (theme: Theme) =>
         flex: 1,
         display: "block",
         textAlign: "center",
-        paddingTop: theme.spacing.unit / 4,
-        paddingBottom: theme.spacing.unit / 4,
+        paddingTop: theme.spacing(1) / 4,
+        paddingBottom: theme.spacing(1) / 4,
         opacity: 0.8,
         "&:hover": {
           backgroundColor: fade(theme.palette.common.black, 0.2),

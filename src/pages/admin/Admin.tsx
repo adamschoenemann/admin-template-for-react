@@ -60,8 +60,8 @@ const styles = (theme: Theme) =>
       },
     },
     menuButton: {
-      paddingLeft: theme.spacing.unit,
-      paddingRight: theme.spacing.unit,
+      paddingLeft: theme.spacing(1),
+      paddingRight: theme.spacing(1),
       borderRadius: 0,
       minWidth: 45,
       [theme.breakpoints.down("sm")]: {
@@ -81,8 +81,8 @@ const styles = (theme: Theme) =>
       textAlign: "center",
       display: "flex",
       alignItems: "center",
-      paddingLeft: theme.spacing.unit,
-      paddingRight: theme.spacing.unit,
+      paddingLeft: theme.spacing(1),
+      paddingRight: theme.spacing(1),
       fontSize: 22,
       justifyContent: "center",
       [theme.breakpoints.down("sm")]: {
@@ -156,7 +156,7 @@ const styles = (theme: Theme) =>
       width: themeConfig.sidebarWidth,
       overflow: "hidden",
       minHeight: "inherit",
-      padding: theme.spacing.unit / 2,
+      padding: theme.spacing(1) / 2,
       transition: theme.transitions.create("width", {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
@@ -173,7 +173,7 @@ const styles = (theme: Theme) =>
 
     copyright: {
       flex: 1,
-      paddingLeft: theme.spacing.unit,
+      paddingLeft: theme.spacing(1),
     },
     copyrightHidden: {
       display: "none",
@@ -181,14 +181,14 @@ const styles = (theme: Theme) =>
     content: {
       flexGrow: 1,
       paddingTop: themeConfig.headerHeight,
-      paddingBottom: theme.spacing.unit,
-      paddingLeft: theme.spacing.unit * 3,
-      paddingRight: theme.spacing.unit * 3,
+      paddingBottom: theme.spacing(1),
+      paddingLeft: theme.spacing(1) * 3,
+      paddingRight: theme.spacing(1) * 3,
       height: "100vh",
       overflow: "auto",
     },
     iconButton: {
-      padding: theme.spacing.unit,
+      padding: theme.spacing(1),
     },
     badge: {
       fontSize: "11px",

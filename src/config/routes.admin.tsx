@@ -1,5 +1,6 @@
 import { Dashboard, Markdown, DataTableExample } from "app/pages/admin";
 import { NotFound } from "app/pages/public";
+import BondProposal from "app/pages/admin/bond/BondProposal";
 
 const routes = [
   {
@@ -21,6 +22,11 @@ const routes = [
     path: "/admin/examples/datatable",
     exact: true,
     component: DataTableExample,
+  },
+  {
+    path: "/admin/bond/proposal",
+    exact: true,
+    component: BondProposal,
   },
   {
     component: NotFound,
